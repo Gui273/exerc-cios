@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Números Pares</title>
+</head>
+<body>
+<h1>Exercício 1</h1>
+<p>Informe um valor e clique em Teste</p>
+<input id="valor" type="text">
+<button type="button" onclick="funcao()">Teste</button>
+<p id="pares"></p>
+<p id="somatotal"></p>
+ <script>
+    function funcao(){
+        const vl = parseInt(document.getElementById("valor").value);
+        let pares = [];
+        let somatotal = 0;
+        for (let i = 1; i <= vl; i++ ){
+            if(i % 2 === 0){
+                pares.push(i);
+                somatotal += i;
+            }
+        }
+        const pareselemt = document.getElementById("pares");
+        const somatotalelement = document.getElementById("somatotal");
+
+        pareselemt.textContent = "Números pares: " + pares.join(', ');
+        somatotalelement.textContent = "Soma total: " + somatotal;
+    } 
+ </script>
+    
+</body>
+</html>
+

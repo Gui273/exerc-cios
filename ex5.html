@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Custo de Piso</title>
+    <script>
+        function calcularCusto() {
+            var comprimento = parseFloat(document.getElementById("comprimento").value);
+            var largura = parseFloat(document.getElementById("largura").value);
+
+            var area = comprimento * largura;
+            var precoPorMetroQuadrado = 36.00;
+            var custoTotal = area * precoPorMetroQuadrado;
+
+            document.getElementById("resultado").innerText = "Custo total: R$" + custoTotal.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Custo de Piso</h1>
+    <label for="comprimento">Comprimento do cômodo (metros): </label>
+    <input type="number" id="comprimento" step="0.01"><br>
+
+    <label for="largura">Largura do cômodo (metros): </label>
+    <input type="number" id="largura" step="0.01"><br>
+
+    <button onclick="calcularCusto()">Calcular Custo</button>
+
+    <p id="resultado"></p>
+</body>
+</html>

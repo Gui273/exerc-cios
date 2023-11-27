@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gasto com Combustível</title>
+</head>
+<body>
+    <div>
+        <label for="kmPercorridos">Quilometragem Percorrida (em km):</label>
+        <input type="number" id="kmPercorridos">
+        <label for="valorCombustivel">Valor do Combustível (por litro):</label>
+        <input type="number" id="valorCombustivel">
+        
+        <button onclick="calcularGasto()">Calcular</button>
+
+        <p id="gastoCombustivel"></p>
+    </div>
+
+    <script src="script_combustivel.js"></script>
+</body>
+</html>
+

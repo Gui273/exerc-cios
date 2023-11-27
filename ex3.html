@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Venda</title>
+</head>
+<body>
+    <div>
+        <label for="productName1">Nome do Produto 1:</label>
+        <input type="text" id="productName1">
+        <label for="productValue1">Valor do Produto 1:</label>
+        <input type="number" id="productValue1">
+        <label for="productQuantity1">Quantidade Vendida 1:</label>
+        <input type="number" id="productQuantity1">
+
+        <button onclick="calcularTotalVenda()">Calcular</button>
+
+        <p id="totalVenda"></p>
+    </div>
+
+    <script src="script_venda.js"></script>
+</body>
+</html>
